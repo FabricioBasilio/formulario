@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+div.formulario {
+    background-color: blue;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+div.formulario > div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.formulario > div > p {
+    font-size: 20px;
+}
+
+div.formulario > form {
+    flex-grow: 2;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.campo-email, .campo-senha {
+    width: 100%;
+    background-color: yellowgreen;
+    text-align: center;
+}
+
+.campo-email > label > p, .campo-senha > label > p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 80%;
+    outline: none;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    width: 80%;
+}

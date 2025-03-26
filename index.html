@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <p>Olá, digite seu email e sua senha.</p>
-    <form action="#" method="post" autocomplete="off">
-
+    <div class="formulario">
         <div>
-            <label for="email">
-                <p>Email: </p>
-            </label>
-            <input type="email" name="email" id="email">
+            <p>Olá, digite seu email e sua senha.</p>
         </div>
-
-        <div>
-            <label for="senha">
-                <p>Senha: </p>
-            </label>
-            <input type="passwordw" name="senha" id="senha">
-        </div>
+        <form action="#" method="post" autocomplete="off">
+            <div class="campo-email">
+                <label for="email">
+                    <p>Digite seu email</p>
+                </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo-senha">
+                <label for="senha">
+                    <p>Digite sua senha</p>
+                </label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
         
-         <br>
-         <input type="submit" value="Entrar">
-    </form>
+             <input type="submit" value="Entrar">
+        </form>
+    </div>
 </body>
 </html>
