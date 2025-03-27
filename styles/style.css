@@ -13,7 +13,7 @@ body {
 }
 
 div.formulario {
-    background-color: blue;
+    border: 1px solid rgb(164, 164, 164);
     height: 450px;
     width: 400px;
     display: flex;
@@ -35,7 +35,6 @@ div.formulario > div > p {
 
 div.formulario > form {
     flex-grow: 2;
-    background-color: orange;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -45,7 +44,6 @@ div.formulario > form {
 
 .campo-email, .campo-senha {
     width: 100%;
-    background-color: yellowgreen;
     text-align: center;
 }
 
@@ -54,15 +52,36 @@ div.formulario > form {
     margin-bottom: 10px;
 }
 
-input[type="email"], input[type="password"] {
+input[type="email"], input[type="password"], input[type="text"] {
     width: 80%;
     outline: none;
     padding: 8px;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(190, 190, 190);
 }
 
 input[type="submit"] {
     padding: 20px;
-    font-size: 25px;
+    font-size: 15px;
     cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #45a049;
+    color: white;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    background-color: rgb(230, 48, 48);
+    color: white;
     width: 80%;
+    margin: 0.5rem 0;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    display: none;
 }
